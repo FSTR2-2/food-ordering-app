@@ -6,41 +6,32 @@ import SectionHeaders from "@/components/layout/SectionHeaders";
 export default function Home() {
   return (
     <>
-      <Header />
       <Hero />
       <HomeMenu />
-      <section className="text-center my-16 ">
-        <SectionHeaders subHeader={"Our Story"} mainHeader={"About Us"} />
-        <div className="text-gray-500 max-w-2xl mx-auto mt-4 flex-col gap-4">
-          <p className="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
-            lectus non lacinia hendrerit. Aliquam erat volutpat. Morbi ornare
-            fermentum mauris, porttitor lacinia magna mollis ut.
-          </p>
+      <section className="text-center my-16" id="about">
+        <SectionHeaders
+          subHeader={'Our story'}
+          mainHeader={'About us'}
+        />
+        <div className="text-gray-500 max-w-md mx-auto mt-4 flex flex-col gap-4">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus
-            lectus non lacinia hendrerit. Aliquam erat volutpat. Morbi ornare
-            fermentum mauris, porttitor lacinia magna mollis ut.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni minima odit recusandae. Illum ipsa non repudiandae? Eum ipsam iste quos suscipit tempora? Aperiam esse fugiat inventore laboriosam officiis quam rem!
           </p>
+          <p>At consectetur delectus ducimus est facere iure molestias obcaecati quaerat vitae voluptate? Aspernatur dolor explicabo iste minus molestiae pariatur provident quibusdam saepe?</p>
+          <p>Laborum molestias neque nulla obcaecati odio quia quod reprehenderit sit vitae voluptates? Eos, tenetur.</p>
         </div>
       </section>
-      <section className="text-center my-8">
+      <section className="text-center my-8" id="contact">
         <SectionHeaders
-          subHeader={"Don't hesitate"}
-          mainHeader={"Contact Us"}
+          subHeader={'Don\'t hesitate'}
+          mainHeader={'Contact us'}
         />
         <div className="mt-8">
-          <a
-            className="text-4xl underline text-gray-500"
-            href="tel:+901234567899"
-          >
-            +90 123 456 78 99
+          <a className="text-4xl underline text-gray-500" href="tel:+46738123123">
+            +46 738 123 123
           </a>
         </div>
       </section>
-      <footer className="border-t p-8 text-center text-gray-500 mt-16">
-        &copy; 2023 All rights reserved
-      </footer>
     </>
-  );
+  )
 }
