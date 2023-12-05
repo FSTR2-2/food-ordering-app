@@ -16,7 +16,7 @@ export async function POST(req) {
 		});
 
 		const ext = file.name.split(".").slice(-1)[0];
-		const newFileName = uniqid() + "." + ext;f
+		const newFileName = uniqid() + "." + ext;
 
 		const chunks = [];
 		for await (const chunk of file.stream()) {
